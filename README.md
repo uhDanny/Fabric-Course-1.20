@@ -40,3 +40,13 @@ both giving back and putting things into practice.
 
 
 - Personal Growth - This project hopefully becomes something I can show and be proud of.
+
+## License Information
+
+### Main Repository Content
+
+A majority of code and other non-texture assets in this repository are licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+## Textures Attribution
+
+As course material is supplied, some textures used in this repository were created by nanoattack as per [LICENSE-TEXTURES](./LICENSE-TEXTURES)
