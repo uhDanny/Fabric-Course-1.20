@@ -7,10 +7,11 @@ This GitHub Repository is a result of following along with Kaupenjoe's Minecraft
 found here: <a href="https://courses.kaupenjoe.net/p/modding-by-kaupenjoe-fabric-modding-for-minecraft-1-20-x" target="_blank">COURSE</a>
 
 # Introduction
-As a pure beginner to Java and modding with the Fabric API. I decided to pick up the aforementioned course and I am struggling to fully internalize and 
+As a pure beginner to Java and modding with the Fabric API. I decided to pick up the aforementioned course, and I am struggling to fully internalize and 
 develop deeper understandings of the concepts within this course.
 
-The idea relates heavily to the concept of "Tutorial Hell".
+The idea relates heavily to the concept of "Tutorial Hell". As a result, I've created this repository with several
+goals in mind.
 
 ## Goals with this repository:
 
