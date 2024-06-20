@@ -37,3 +37,6 @@ both giving back and putting things into practice.
 
 - Maintaining Motivation - Establishing clear goals in mind with this little project keeps me interested in programming,
   regardless of how difficult or frustrating it may get.
+
+
+- Personal Growth - This project hopefully becomes something I can show and be proud of.
