@@ -1,0 +1,1 @@
+This is a repo following Kaupenjoe's Fabric 1.20.X course found here: https://courses.kaupenjoe.net
