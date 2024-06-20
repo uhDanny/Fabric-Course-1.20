@@ -18,35 +18,38 @@ I have a few goals with this repository and I hope to see a majority of them thr
 personal learning archive but hopefully as a great learning tool for other beginners like myself. These goals include
 such things as:
 
-- Version Control - Learning the ins and outs of using/utilizing GitHub(Git) for future projects,
+- **Version Control** - Learning the ins and outs of using/utilizing GitHub(Git) for future projects,
 potential collaboration and contributions to open-source projects in the future.
 
 
-- Documenting Progress - To solidify my understanding of both Java and the Fabric API through code documentation 
+- **Documenting Progress** - To solidify my understanding of both Java and the Fabric API through code documentation 
 utilizing clear, concise javadoc comments written from my own understanding.
 
 
-- Public repository contribution - Contributing to the overall knowledge base surrounding Minecraft Modding and
+- **Public repository contribution** - Contributing to the overall knowledge base surrounding Minecraft Modding and
 the Fabric API.
 
 
-- Continued Learning and Development - as I both progress and complete the course, I will likely take what I have 
+- **Continued Learning and Development** - as I both progress and complete the course, I will likely take what I have 
 learned and continue to build upon this repository adding additional content under a "development" branch as a means of 
 both giving back and putting things into practice.
 
 
-- Maintaining Motivation - Establishing clear goals in mind with this little project keeps me interested in programming,
+- **Maintaining Motivation** - Establishing clear goals in mind with this little project keeps me interested in programming,
   regardless of how difficult or frustrating it may get.
 
 
-- Personal Growth - This project hopefully becomes something I can show and be proud of.
+- **Personal Growth** - This project hopefully becomes something I can show and be proud of.
 
 ## License Information
 
 ### Main Repository Content
 
-A majority of code and other non-texture assets in this repository are licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+All code and other non-texture assets in this repository are licensed under the MIT License. 
+See the [LICENSE](./LICENSE) file for details.
 
 ## Textures Attribution
 
-As course material is supplied, some textures used in this repository were created by nanoattack as per [LICENSE-TEXTURES](./LICENSE-TEXTURES)
+As course material is supplied, some textures used in this repository were created by nanoattack as per 
+[LICENSE-TEXTURES](./LICENSE-TEXTURES) and are attributed as per the terms specified by their creator 
+(since no specific license type is mentioned).
