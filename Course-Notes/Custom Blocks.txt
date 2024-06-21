@@ -1,0 +1,67 @@
+### Custom Blocks ###
+
+Within your resources folder, there should be a folder structure of:
+
+resources
+    -assets
+        -mod_id_name_here
+            -blockstates
+
+            -lang
+                en_us.json (or any language identifier like de_de.json)
+            -models
+                -block
+                    name_of_block.json
+                -item
+                    name_of_item.json
+            textures
+                -block
+                    texture.png
+                -item
+                    texture.png
+
+The structure of a basic block's blockstates json file:
+
+{
+    "variants":
+        "": {
+          "model": "modid:block/name_of_block_here"
+    }
+}
+
+The structure of a json file within the models/block folder:
+
+{
+    "parent": "block/cube_all"
+    "textures" {
+        "layer0": "modid:block/name_of_block_here"
+    }
+}
+
+The structure of a json file within the models/item folder:
+{
+    "parent": "item/generated"
+    "textures" {
+        "layer0": "modid:item/name_of_item_here"
+    }
+}
+
+# json files #
+
+Blockstates:
+    A blockstate determines the different appearances and states a block can have. As well as specify how those states
+    map to different models and textures.
+
+Parent:
+    Parent is particularly used for models. The "parent" key is used to specify a base model that the current model
+    should inherit from. This allows for modularity by enabling one model to build upon or modify another.
+
+    So in the case of a normal block, the parent we often use is "block/cube_all". This is because minecraft provides
+    several common parent models for us to use and cube_all is set up where all faces of our model have the same texture.
+
+Textures:
+    Textures is pretty self-explanatory -- we're just defining the texture that we want to use which is usually in the
+    textures/block or textures/item folders.
+
+    For blocks we typically want them to remain as 3d cubes in our inventory.
+    For items we typically want them to remain as 2d sprites.
