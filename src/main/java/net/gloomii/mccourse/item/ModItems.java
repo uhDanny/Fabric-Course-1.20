@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     /**
-     * Represents a custom item called Pink Garnet.
+     * <b>Represents a custom item called Pink Garnet.</b>
      * <p>
      * This item is initialized and registered with Minecraft's item registry
      * using predefined item settings via {@link #registerItem(String, Item)}.
@@ -24,7 +24,7 @@ public class ModItems {
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new FabricItemSettings()));
 
     /**
-     * Registers a new item with the specified name and item settings.
+     * <b>Registers a new item with the specified name and item settings.</b>
      *
      * @param name The name of the item to register.
      * @param item The item instance to register.
@@ -35,7 +35,7 @@ public class ModItems {
     }
 
     /**
-     * Adds custom items to the Fabric item group entries.
+     * <b>Adds custom items to the Fabric item group entries.</b>
      *
      * <p>This method stores all "ingredient" items together as entries. These items can then be
      * added to Minecraft's existing Ingredients tab.</p>
@@ -52,10 +52,9 @@ public class ModItems {
     }
 
     /**
-     * Registers all mod items for the application.
-     *
-     * <p>This method initializes and registers all the mod items that will be used within the application.
-     * It should be called during the mod initialization phase. Specifically, it registers the
+     * <p><b>This method initializes/registers all the mod items that will be used within the application.
+     * It should be called during the mod initialization phase.</b>
+     * <p>Specifically, it registers the
      * {@link ItemGroupEvents#modifyEntriesEvent} for the Ingredients tab and attaches the
      * {@link #itemGroupIngredients} method to it.</p>
      *
