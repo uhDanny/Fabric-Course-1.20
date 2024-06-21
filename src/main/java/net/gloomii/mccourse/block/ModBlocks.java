@@ -40,7 +40,8 @@ public class ModBlocks {
      */
     public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
-
+    public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     /**
      * <b>Helper method {@code registerBlock} registers a new block with the specified name and item settings.</b>
      *
@@ -72,12 +73,6 @@ public class ModBlocks {
      *
      * <p>This method initializes and registers all the mod blocks that will be used within the application.
      * It should be called during the mod initialization phase. Specifically, it registers the
-     * {@link ItemGroupEvents#modifyEntriesEvent} for the Ingredients tab and attaches the
-     * {@link #itemGroupIngredients} method to it.</p>
-     *
-     * <p>This effectively adds all custom item entries defined in {@link #itemGroupIngredients} to the Ingredients tab.</p>
-     *
-     * @see #itemGroupIngredients(FabricItemGroupEntries)
      */
     public static void registerModBlocks() {
         MCCourseMod.LOGGER.info("Registering ModBlocks for " + MCCourseMod.MOD_ID);
