@@ -1,5 +1,6 @@
 package net.gloomii.mccourse.block;
 
+import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -11,6 +12,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -39,9 +41,19 @@ public class ModBlocks {
      * <p><b>Note:</b> You can middle click IRON_BLOCK to be taken to the Blocks.java class where you can view the source code</p>
      */
     public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block PINK_GARNET_ORE = registerBlock("pink_garnet_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block DEEPSLATE_PINK_GARNET_ORE = registerBlock("deepslate_pink_garnet_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE)));
+    public static final Block END_STONE_PINK_GARNET_ORE = registerBlock("end_stone_pink_garnet_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE)));
+    public static final Block NETHER_PINK_GARNET_ORE = registerBlock("nether_pink_garnet_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK)));
+
     /**
      * <b>Helper method {@code registerBlock} registers a new block with the specified name and item settings.</b>
      *
