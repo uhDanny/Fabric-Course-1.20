@@ -1,19 +1,16 @@
 package net.gloomii.mccourse.block;
 
-import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gloomii.mccourse.MCCourseMod;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     /**
@@ -45,14 +42,31 @@ public class ModBlocks {
     public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
+    /**
+     * <b>Represents a custom ExperienceDroppingBlock called Pink Garnet Ore.</b>
+     * <p>This item is initialized and registered with Minecraft's item/block registry
+     * using predefined block settings via {@link #registerBlock(String, Block)}.
+     * <p>It can be accessed statically via {@code PINK_GARNET_ORE}.</p>
+     *
+     * <p>
+     * The difference between {@code new Block} and {@code new ExperienceDroppingBlock} is that
+     * one of them doesn't drop experience once mined and the other does.
+     *
+     * <p>When creating a new experience dropping box the only thing you need to specify is the min and max exp value
+     * for your block via {@code block_code_here, UniformIntProvider.create(min, max)));}
+     * </p>
+     * <b>Note:</b> You can middle click ExperienceDroppingBlock to be taken to the ExperienceDroppingBlock.java class
+     * where you can then middle click on it once again to view all the respective values for vanilla blocks</p>
+     */
+
     public static final Block PINK_GARNET_ORE = registerBlock("pink_garnet_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE), UniformIntProvider.create(3, 6)));
     public static final Block DEEPSLATE_PINK_GARNET_ORE = registerBlock("deepslate_pink_garnet_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE), UniformIntProvider.create(3, 6)));
     public static final Block END_STONE_PINK_GARNET_ORE = registerBlock("end_stone_pink_garnet_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE), UniformIntProvider.create(3, 6)));
     public static final Block NETHER_PINK_GARNET_ORE = registerBlock("nether_pink_garnet_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHERRACK), UniformIntProvider.create(3, 6)));
 
     /**
      * <b>Helper method {@code registerBlock} registers a new block with the specified name and item settings.</b>
