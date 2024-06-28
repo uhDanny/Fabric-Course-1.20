@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.gloomii.mccourse.MCCourseMod;
 import net.gloomii.mccourse.block.ModBlocks;
+import net.gloomii.mccourse.item.custom.MetalDetectorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -21,8 +22,13 @@ public class ModItems {
      * It can be accessed statically via {@code PINK_GARNET}.
      * </p>
      */
-    public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new FabricItemSettings()));
-    public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new FabricItemSettings()));
+    public static final Item PINK_GARNET = registerItem("pink_garnet",
+            new Item(new FabricItemSettings()));
+    public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet",
+            new Item(new FabricItemSettings()));
+
+    public static final Item METAL_DETECTOR = registerItem("metal_detector",
+            new MetalDetectorItem(new FabricItemSettings().maxDamage(256)));
 
     /**
      * <b>Registers a new item with the specified name and item settings.</b>
